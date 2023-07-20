@@ -1,0 +1,25 @@
+.navbar-link {
+  text-decoration: none;
+  margin-top: 30px;
+  color: black;
+  font-weight: bolder;
+  margin-left: 50px;
+  margin-top: -10;
+}
+
+.navbar-link:hover {
+  color: grey;
+}
+.btn{
+width: 100px;
+height: 35px;
+margin-left: 30px;
+margin-bottom:250px ;
+background-color: green;
+border: none;
+font-weight: bold;
+}  
+.img{
+  width:500px;
+  background-color:#f2d299;
+}
