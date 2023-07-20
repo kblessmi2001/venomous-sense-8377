@@ -6,7 +6,7 @@ function Middle() {
       <Heading as="h1" fontSize="xx-large" textAlign="center" mb={4}>
         Empowering At Every Age: Explore Our Learning Programs
       </Heading>
-      <Text fontSize="md" textAlign="center" color="gray.600" mb={8}>
+      <Text style={{fontSize:"18px"}} textAlign="center" color="gray.600" mb={8}>
         Discover our step-by-step approach to child development from infancy through kindergarten.
       </Text>
       <HStack spacing={8} justifyContent="center">
@@ -32,7 +32,7 @@ function Middle() {
         </Box>
       </HStack>
 <br/>
-      <Text>
+      <Text style={{fontSize:"18px"}}>
       This is a critical year of children’s development as they are on the verge of going to school. Our teachers will balance plenty of guidance along with independent learning opportunities, as children gain more independence.
       </Text>
       <br/><br/>

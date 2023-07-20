@@ -8,6 +8,8 @@ import image from "../images//Screenshot 2023-07-19 143203.png"
 import gallery from "../images/Screenshot 2023-07-19 143231.png"
 import gal from "../images/Screenshot 2023-07-19 143252.png"
 import Middle from "../Middle";
+import teacher from "../images/teacher.jpg"
+import teach from "../images/teach.jpeg"
 function Home() {
   const navbarStyle = {
   backgroundImage: `url(${bgimg})`,
@@ -104,6 +106,30 @@ function Home() {
 <br/><br/>
 <div>
 <Middle/>
+</div>
+<div>
+  <Heading style={{textAlign:"left",marginLeft:"50px"}}>Teachers</Heading>
+  <Flex>
+    <div>
+  <ul style={{marginTop:"40px",textAlign:"left",marginLeft:"100px",fontSize:"18px"}}>
+    <li>Together, We're Going To Make The Future</li>
+    <li>Children Where We Are Able To Fulfill All Their Requirements  <br/> To Keep Them Safe From Withered World</li>
+    <li>We Have Already Stepped Out And Start Changing The World</li>
+    <li>Enhancing Them With A Bright Future</li>
+    <li>Enhancing Them With A Bright Future</li>
+    <li>Together, We're Going To Make The Future</li>
+    <li>Children Where We Are Able To Fulfill All Their Requirements <br/>To Keep Them Safe From Withered World</li>
+    <li>We Have Already Stepped Out And Start Changing The World</li>
+    <li>Enhancing Them With A Bright Future</li>
+    <li>Enhancing Them With A Bright Future</li>
+  </ul>
+  </div>
+  <div >
+    <img src={teacher} alt="" width={200} height={200}style={{marginLeft:"450px",border:'14px solid #f3dab1' ,borderRadius:"20px"}} />
+    <img src={teach} alt="" width={300} height={300}style={{marginLeft:"150px",marginTop:"-100px",border:'14px solid RGB(46 72 88)' ,borderRadius:"20px"}} />
+  </div>
+
+  </Flex>
 </div>
 <div >
   <Heading textAlign="left" marginLeft={50} color="#2e4555">Photo Gallery</Heading>
