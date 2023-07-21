@@ -8,31 +8,8 @@ function Curriculam() {
     <div className="Curriculam">
       <Flex alignItems="center" position="relative" marginTop={15} >
         
-        <Box
-          width={400}
-          height={400}
-          borderRadius="50%"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          flexDirection="column"
-          position="absolute"
-          top="20%"
-          marginLeft="100px"
-          background="radial-gradient(circle, transparent 40%, white 40%)" 
-        >
-          {/* Inner circle */}
-          <Box
-            bgColor="blue.500"
-            width={300}
-            height={300}
-            borderRadius="50%"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            flexDirection="column"
-          //  / marginLeft="100px"
-          >
+        <Box className="outerCircle" >
+            <Box className="innerCircle">
             <Text fontSize="28px" fontWeight="bold" color="white">
               EARLY
             </Text>
@@ -97,7 +74,7 @@ function Curriculam() {
   </ul>
 </Box>
 
-<Box bgColor="rgb(207,234,247)" padding={10} marginBottom={-120}>
+<Box bgColor="rgb(207,234,247)" padding={10}>
   <Heading color="rgb(46,72,88)">Social & Emotional Growth</Heading>
   <br />
   <ul className="star-list" style={{ textAlign: "left", marginLeft: "200px",fontSize:"20px" }}>
@@ -107,6 +84,7 @@ function Curriculam() {
     <li>Understanding trust, empathy, and a sense of wrong and right</li>
   </ul>
 </Box>
+
 
     </div>
   );

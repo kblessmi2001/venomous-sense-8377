@@ -10,6 +10,7 @@ import gal from "../images/Screenshot 2023-07-19 143252.png"
 import Middle from "../Middle";
 import teacher from "../images/teacher.jpg"
 import teach from "../images/teach.jpeg"
+import ContactUs from "./ContactUs";
 function Home() {
   const navbarStyle = {
   backgroundImage: `url(${bgimg})`,
@@ -147,7 +148,7 @@ function Home() {
     <img src={picture} alt="" width={300} style={{border:'14px solid #f3dab1' ,borderRadius:"20px"}}/>
   </HStack>
 </div>
-
+<ContactUs/>
       </div>
     
     );
