@@ -34,8 +34,8 @@ function Navbar() {
               <MenuItem className='menu'>Kindergarten</MenuItem>
             </MenuList>
           </Menu>
-        <Link className="navbar-link" style={{ marginTop: -9 }} to="/blogs">
-          Blogs
+        <Link className="navbar-link" style={{ marginTop: -9 }} to="/contactus">
+         Contact Us
         </Link>
         <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', marginTop: -9  }}>
           <Button
@@ -43,7 +43,7 @@ function Navbar() {
             _hover={{ backgroundColor: 'black', color: 'white' }}
             style={{ borderRadius: 10, height: 30, border: 'none' }}
           >
-            <Link to="/login" style={{ textDecoration: 'none', fontWeight: 'bolder', color: 'inherit'}}>
+            <Link to="/admission" style={{ textDecoration: 'none', fontWeight: 'bolder', color: 'inherit'}}>
               Admission Now
             </Link>
           </Button>

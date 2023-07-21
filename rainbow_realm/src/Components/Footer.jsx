@@ -34,7 +34,7 @@ const Footer = () => {
       width="100%"
     >
 
-<Box as={Stack} spacing={10} py={10} width="100%" height="300px">
+<Box as={Stack}  py={10} width="100%" height="300px">
 
         <Stack direction={{ base: 'column', md: 'row' }} spacing={70}>
       
@@ -167,7 +167,7 @@ const Footer = () => {
 
 const CenteredFooter = () => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '200px' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '70px' }}>
       <Footer />
     </div>
   );

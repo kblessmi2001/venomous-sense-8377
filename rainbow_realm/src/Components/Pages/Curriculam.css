@@ -14,4 +14,27 @@
     left: 0; 
     color:#f8b132; 
   }
+  .outerCircle {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 100px;
+    background: radial-gradient(circle, transparent 40%, white 40%);
+  }
+  .innerCircle {
+    background-color: #3182ce; 
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   
