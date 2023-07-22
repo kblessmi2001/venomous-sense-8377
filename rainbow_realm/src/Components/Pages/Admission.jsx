@@ -1,157 +1,57 @@
-import React, { useState } from 'react';
-import {
-  Flex,
-  Box,
-  Tabs,
-  TabList,
-  Tab,
-  TabPanel,
-  TabPanels,
-  Input,
-  Button,
-  Checkbox,
-  Text,
-  chakra,
-  Stack
-} from '@chakra-ui/react';
-import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Flex, Input, Button, Heading } from "@chakra-ui/react";
+import admissionImg from "../images/1772249.webp"
 
 function Admission() {
-  const [activeTab, setActiveTab] = useState('login');
+  const [showAlert, setShowAlert] = useState(false);
+  const [isRegistered, setIsRegistered] = useState(false);
+  const navigate = useNavigate();
 
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
+  const handleRegister = () => {
+    setShowAlert(true);
+    setIsRegistered(true);
   };
 
+  useEffect(() => {
+    if (isRegistered) {
+      const timeoutId = setTimeout(() => {
+        setShowAlert(false);
+        navigate('/');
+      }, 2000);
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [isRegistered, navigate]);
+
+  if (showAlert) {
+    alert("Registration Successful!");
+  }
+
   return (
-    <Box p={3} my={5} width="50%">
-      <Tabs variant="enclosed" index={activeTab === 'login' ? 0 : 1}>
-        <TabList>
-          <Tab onClick={() => handleTabChange('login')}>Login</Tab>
-          <Tab onClick={() => handleTabChange('register')}>Register</Tab>
-        </TabList>
+    <div>
+      <Flex p={5} width="90%" margin="auto" marginTop={50} style={{border:'14px solid #2f4958' }}>
+        <div style={{ width: "50%"}}>
+          <img src={admissionImg} alt=""style={{ width:"100%" ,height:"460px"}} />
+        </div>
+        <div style={{ width: "50%" }}>
+          <Flex flexDirection="column" margin="auto"  width="100%" >
+            <Heading style={{ fontSize: "30px", display: "flex", height: "60px", alignItems: "center", justifyContent: "center", backgroundColor: "#ffdea8", width: "100%" }}> Admission Now </Heading>
 
-        <TabPanels>
-          <TabPanel>
-            <Flex flexDirection="column">
-              <Text textAlign="center" mb={3}>
-                Sign in with:
-              </Text>
-              <Stack direction={'column'} spacing={2} marginLeft={60}>
-                <Stack direction={'row'} spacing={6}>
-                  <chakra.a
-                    href={'#'}
-                    display={'flex'}
-                    alignItems={'center'}
-                    title={'Twitter'}
-                    color="black"
-                  >
-                    <FaTwitter />
-                  </chakra.a>
-                  <chakra.a
-                    href={'#'}
-                    display={'flex'}
-                    alignItems={'center'}
-                    title={'YouTube'}
-                    color="black"
-                  >
-                    <FaYoutube />
-                  </chakra.a>
-                  <chakra.a
-                    href={'#'}
-                    display={'flex'}
-                    alignItems={'center'}
-                    title={'Instagram'}
-                    color="black"
-                  >
-                    <FaInstagram />
-                  </chakra.a>
-                </Stack>
-              </Stack>
-              <Text textAlign="center" mt={3}>
-                or:
-              </Text>
-              <br />
-              <Input mb={4} type="email" placeholder="Email address" />
-              <Input mb={4} type="password" placeholder="Password" />
-              <Flex justifyContent="center" alignItems="center" mb={4}>
-                <Checkbox name="flexCheck" value="" id="flexCheckDefault" label="Remember me" style={{ marginRight: '10px' }} />
-                <a href="#!">Forgot password?</a>
-              </Flex>
-              <Button colorScheme="blue" mb={4}>
-                Sign in
-              </Button>
-              <Text textAlign="center">
-                Not a member?{' '}
-                <a href="#!" onClick={() => handleTabChange('register')}>
-                  Register
-                </a>
-              </Text>
-            </Flex>
-          </TabPanel>
-          <TabPanel>
-            <Flex flexDirection="column">
-              <Text textAlign="center" mb={3}>
-                Sign up with:
-              </Text>
-              <Stack direction={'column'} spacing={2}>
-                <Stack direction={'row'} spacing={6} marginLeft={60}>
-                  <chakra.a
-                    href={'#'}
-                    display={'flex'}
-                    alignItems={'center'}
-                    title={'Twitter'}
-                    color="black"
-                  >
-                    <FaTwitter />
-                  </chakra.a>
-                  <chakra.a
-                    href={'#'}
-                    display={'flex'}
-                    alignItems={'center'}
-                    title={'YouTube'}
-                    color="black"
-                  >
-                    <FaYoutube />
-                  </chakra.a>
-                  <chakra.a
-                    href={'#'}
-                    display={'flex'}
-                    alignItems={'center'}
-                    title={'Instagram'}
-                    color="black"
-                  >
-                    <FaInstagram />
-                  </chakra.a>
-                </Stack>
-              </Stack>
-
-              <Text textAlign="center" mt={3}>
-                or:
-              </Text>
-              <br />
-              <Input mb={4} type="text" placeholder="Name" />
-              <Input mb={4} type="text" placeholder="Username" />
-              <Input mb={4} type="email" placeholder="Email" />
-              <Input mb={4} type="password" placeholder="Password" />
-              <Flex justifyContent="center" mb={4}>
-                <Checkbox name="flexCheck" value="" id="flexCheckDefault" label="Remember me" style={{ marginRight: '10px' }} />
-                <a href="#!">Forgot password?</a>
-              </Flex>
-              <Button colorScheme="blue" mb={4}>
-                Sign up
-              </Button>
-              <Text textAlign="center">
-                Already a member?{' '}
-                <a href="#!" onClick={() => handleTabChange('login')}>
-                  Login
-                </a>
-              </Text>
-            </Flex>
-          </TabPanel>
-        </TabPanels>
-      </Tabs>
-    </Box>
+            <br />
+            <Input mb={4} type="text" placeholder="Enter Child Name" />
+            <Input mb={4} type="date" placeholder="Select Date of Birth" />
+            <Input mb={4} type="email" placeholder="Enter Email Address" />
+            <Input mb={4} type='number' placeholder="Enter Mobile Number" />
+            <Input mb={4} type="number" placeholder="Select Academic Year" />
+            <Input mb={4} type="text" placeholder="Select Grade" />
+            <Button backgroundColor="#ffdea8" onClick={handleRegister}>
+              Register
+            </Button>
+          </Flex>
+        </div>
+      </Flex>
+    </div>
   );
 }
 
