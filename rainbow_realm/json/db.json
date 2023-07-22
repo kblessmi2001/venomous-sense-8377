@@ -1,32 +1,156 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-
+  "user": [
+    
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-  "user":[{
-    "id":1,
-    "name" :"blessmi"
-}],
-"products":[{
-  "id":1,
-  "name" : "book"
-  
-}]
-
-  
-
-}
+    "earlyPreschool": [
+                {
+                  "id": 1,
+                  "class": "Early Preschool",
+                  "age": "2-3 years",
+                  "subject": "Language Development",
+                  "description": "Introduction to basic language and vocabulary"
+                },
+                {
+                  "id": 2,
+                  "class": "Early Preschool",
+                  "age": "2-3 years",
+                  "subject": "Motor Skills",
+                  "description": "Development of fine and gross motor skills"
+                },
+                {
+                  "id": 3,
+                  "class": "Early Preschool",
+                  "age": "2-3 years",
+                  "subject": "Arts and Crafts",
+                  "description": "Engaging in creative art activities"
+                },
+                {
+                  "id": 4,
+                  "class": "Early Preschool",
+                  "age": "2-3 years",
+                  "subject": "Exploration and Play",
+                  "description": "Hands-on exploration and play-based learning"
+                },
+                {
+                  "id": 5,
+                  "class": "Early Preschool",
+                  "age": "2-3 years",
+                  "subject": "Social Interaction",
+                  "description": "Building social skills through group activities"
+                }
+              ],
+          
+          "preschool": [
+                {
+                  "id": 1,
+                  "class": "Preschool",
+                  "age": "3-4 years",
+                  "subject": "Literacy and Language",
+                  "description": "Building language skills and vocabulary through stories and conversations"
+                },
+                {
+                  "id": 2,
+                  "class": "Preschool",
+                  "age": "3-4 years",
+                  "subject": "Math Concepts",
+                  "description": "Introducing mathematical concepts and problem-solving"
+                },
+                {
+                  "id": 3,
+                  "class": "Preschool",
+                  "age": "3-4 years",
+                  "subject": "Science Exploration",
+                  "description": "Discovering the world through simple science experiments and observations"
+                },
+                {
+                  "id": 4,
+                  "class": "Preschool",
+                  "age": "3-4 years",
+                  "subject": "Creative Arts",
+                  "description": "Encouraging creativity through art, music, and dramatic play"
+                },
+                {
+                  "id": 5,
+                  "class": "Preschool",
+                  "age": "3-4 years",
+                  "subject": "Physical Development",
+                  "description": "Promoting physical development and motor skills"
+                }
+              ],
+          
+          "preKindergarten": [
+                {
+                  "id": 1,
+                  "class": "Pre-Kindergarten",
+                  "age": "4-5 years",
+                  "subject": "Reading Readiness",
+                  "description": "Preparing for reading through phonics and sight words"
+                },
+                {
+                  "id": 2,
+                  "class": "Pre-Kindergarten",
+                  "age": "4-5 years",
+                  "subject": "Math Concepts",
+                  "description": "Introducing mathematical operations and problem-solving"
+                },
+                {
+                  "id": 3,
+                  "class": "Pre-Kindergarten",
+                  "age": "4-5 years",
+                  "subject": "Science Exploration",
+                  "description": "Investigating scientific concepts and conducting experiments"
+                },
+                {
+                  "id": 4,
+                  "class": "Pre-Kindergarten",
+                  "age": "4-5 years",
+                  "subject": "Creative Arts",
+                  "description": "Exploring different art forms and creative expression"
+                },
+                {
+                  "id": 5,
+                  "class": "Pre-Kindergarten",
+                  "age": "4-5 years",
+                  "subject": "Physical Education",
+                  "description": "Promoting physical fitness and coordination"
+                }
+              ],
+          "kindergarten": [
+                {
+                  "id": 1,
+                  "class": "Kindergarten ",
+                  "age": "5-6 years",
+                  "subject": "Reading Comprehension",
+                  "description": "Developing reading comprehension and fluency"
+                },
+                {
+                  "id": 2,
+                  "class": "Kindergarten ",
+                  "age": "5-6 years",
+                  "subject": "Mathematics",
+                  "description": "Building math skills and problem-solving abilities"
+                },
+                {
+                  "id": 3,
+                  "class": "Kindergarten ",
+                  "age": "5-6 years",
+                  "subject": "Science Exploration",
+                  "description": "Investigating scientific concepts and conducting experiments"
+                },
+                {
+                  "id": 4,
+                  "class": "Kindergarten ",
+                  "age": "5-6 years",
+                  "subject": "Creative Arts",
+                  "description": "Exploring different art forms and creative expression"
+                },
+                {
+                  "id": 5,
+                  "class": "Kindergarten ",
+                  "age": "5-6 years",
+                  "subject": "Social Studies",
+                  "description": "Learning about communities and world geography"
+                }
+              ]
+           
+        }
