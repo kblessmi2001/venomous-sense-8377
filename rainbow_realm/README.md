@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# venomous-sense-8377
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# TravTok
+website for School under the age of 5
 
-In the project directory, you can run:
 
-### `npm start`
+Welcome to WonderKidEdu its was user-friendly school website.
+Build your children knowledge with our school website.
+Plan your children future with our user-friendly school website.
+This is a individual Project from Masai School in the Construct Week within 5 Days.
+Deployed URL 👉 [https://travtok.netlify.app/]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Member
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Blessmi
 
-### `npm test`
+💻 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/80309747/229348805-946f60f0-26c4-4069-9fb7-3d450e7abc51.png)
+![image](https://user-images.githubusercontent.com/80309747/229348825-9ba7f0b5-db77-4025-8d48-d1e38421d0f0.png)
+![image](https://user-images.githubusercontent.com/80309747/229348835-da03d010-e01e-4299-ad47-53e08d5b49fb.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Tools
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://user-images.githubusercontent.com/80309747/229348866-a41c6e5d-458a-4396-a0f6-ce974e5cfae0.png)
+![image](https://user-images.githubusercontent.com/80309747/229348874-6e5a14c8-46e7-457c-b14c-c2491866064f.png)
+![image](https://user-images.githubusercontent.com/80309747/229348884-8fd728ce-a616-4341-a4ca-fe15677f0d3c.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Let's Dive into What we have made
+Home Page :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img width="935" alt="Home" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/8cdc4781-25ab-4432-bfd5-1b0181e9db36">
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img width="935" alt="Home" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/8cdc4781-25ab-4432-bfd5-1b0181e9db36">
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Footer page:
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<img width="960" alt="footer" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/49acf093-0da7-450c-a20e-bfd6b25dad68">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+Login Page :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img width="911" alt="login" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/ed70c512-b60b-4790-a63c-5e284de4d865">
 
-### `npm run build` fails to minify
+Register Page :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<img width="908" alt="signup" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/10f4bfaa-1349-464a-b513-aa0461dde046">
+
+
+
+
+Admission Page:
+
+
+
+<img width="906" alt="Payment" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/57d5b32d-c7ae-4bed-b806-54af8b2926b8">
+
+
+
+
+Product Page :
+
+
+
+<img width="960" alt="productspage" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/d9d2dd0e-6008-4871-a811-b64288788f08">
+
+
+
+
+SingleProductPage:
+
+
+
+
+<img width="960" alt="otp" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/981a673b-38a5-41c6-be43-4b7da66ec2f0">
+
+
+
+
+<img width="960" alt="otpinfo" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/31ae5998-be8c-4e04-a73d-a2305db42483">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Source Code(GitHub link):- https://github.com/abhipathak1/sharp-lumber-1926
+
+Show your support
+Give a ⭐ if you like this project!
+
+Thank you

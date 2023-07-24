@@ -68,7 +68,6 @@ function Login({ onClose }) {
               }
             })
             .then((newUser) => {
-              // Update usersData state with the new user
               setUsersData([...usersData, newUser]);
   
               toast({
@@ -94,6 +93,7 @@ function Login({ onClose }) {
   };
   
   return (
+    <div style={{ fontFamilyfamily: "Arial, Helvetica, sans-serif" }}>
     <Box  my={5} width="100%" margin="auto" style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px", background: "transparent", borderRadius: "20px" }}>
       <Tabs variant="enclosed" index={activeTab === 'login' ? 0 : 1}>
    <Box  backgroundColor='#ffdea8'width="100%"display="flex" justifyContent="center" paddingTop={5}paddingBottom={5} >
@@ -170,6 +170,7 @@ function Login({ onClose }) {
         </TabPanels>
       </Tabs>
     </Box>
+    </div>
   );
 }
 

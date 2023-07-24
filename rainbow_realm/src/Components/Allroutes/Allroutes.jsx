@@ -3,9 +3,10 @@ import { Route, Routes } from 'react-router-dom';
 import Aboutus from '../Pages/Aboutus';
 import Home from '../Pages/Home';
 import Curriculam from '../Pages/Curriculam';
-// import Login from '../Pages/Login';
+import Course from '../Pages/Course';
 import Admission from '../Pages/Admission';
 import AuthContextProvider from '../Context/AuthContextProvider';
+import SingleSubjectPage from '../Pages/SingleSubjectPage';
 function AllRoutes() {
   return (
    
@@ -15,8 +16,9 @@ function AllRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/curriculam" element={<Curriculam />} />
-          {/* <Route path="/login" element={<Login />} /> */}
+          <Route path="/course" element={<Course />} />
           <Route path="/admission" element={<Admission />} />
+          <Route path="/singlesubjectpage/:id" element={<SingleSubjectPage/>}/>
 
         </Routes>
         </AuthContextProvider>
