@@ -29,7 +29,7 @@ function Admission() {
   }
 
   return (
-    <div>
+    <div  style={{ fontFamilyfamily: "Arial, Helvetica, sans-serif" }}>
       <Flex p={5} width="90%" margin="auto" marginTop={50} style={{border:'14px solid #2f4958' }}>
         <div style={{ width: "50%"}}>
           <img src={admissionImg} alt=""style={{ width:"100%" ,height:"460px"}} />
@@ -39,12 +39,12 @@ function Admission() {
             <Heading style={{ fontSize: "30px", display: "flex", height: "60px", alignItems: "center", justifyContent: "center", backgroundColor: "#ffdea8", width: "100%" }}> Admission Now </Heading>
 
             <br />
-            <Input mb={4} type="text" placeholder="Enter Child Name" />
-            <Input mb={4} type="date" placeholder="Select Date of Birth" />
-            <Input mb={4} type="email" placeholder="Enter Email Address" />
-            <Input mb={4} type='number' placeholder="Enter Mobile Number" />
-            <Input mb={4} type="number" placeholder="Select Academic Year" />
-            <Input mb={4} type="text" placeholder="Select Grade" />
+            <Input mb={4} type="text" placeholder="Enter Child Name"  required/>
+            <Input mb={4} type="date" placeholder="Select Date of Birth" required />
+            <Input mb={4} type="email" placeholder="Enter Email Address" required />
+            <Input mb={4} type='number' placeholder="Enter Mobile Number" required />
+            <Input mb={4} type="number" placeholder="Select Academic Year" required />
+            <Input mb={4} type="text" placeholder="Select Grade" required />
             <Button backgroundColor="#ffdea8" onClick={handleRegister}>
               Register
             </Button>

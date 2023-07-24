@@ -21,7 +21,7 @@ function Home() {
 
   
     return (
-      <div className="Home">
+      <div className="Home" style={{ fontFamilyfamily: "Arial, Helvetica, sans-serif" }}>
       <div>
         <div style={{ ...navbarStyle }}>
           <div>

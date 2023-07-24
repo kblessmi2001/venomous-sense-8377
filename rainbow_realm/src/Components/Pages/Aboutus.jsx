@@ -5,7 +5,7 @@ import infant from "../images/pexels-mikhail-nilov-8923566-scaled.webp"
 
 function Aboutus() {
     return (
-      <div className="Aboutus">
+      <div className="Aboutus"  style={{ fontFamilyfamily: "Arial, Helvetica, sans-serif" }}>
         <Flex>
         <div style={{width:"600px",marginLeft:"100px",marginTop:"130px"}}>
        <Heading>About Us</Heading>
@@ -628,3 +628,47 @@ function Aboutus() {
 //     ]
 //   }
   
+
+
+// "kindergarten": [
+//     {
+//       "id": 1,
+//       "class": "Kindergarten ",
+//       "age": "5-6 years",
+//       "image":"",
+//       "subject": "Reading Comprehension",
+//       "description": "Developing reading comprehension and fluency"
+//     },
+//     {
+//       "id": 2,
+//       "class": "Kindergarten ",
+//       "age": "5-6 years",
+//       "image":"",
+//       "subject": "Mathematics",
+//       "description": "Building math skills and problem-solving abilities"
+//     },
+//     {
+//       "id": 3,
+//       "class": "Kindergarten ",
+//       "age": "5-6 years",
+//       "image":"",
+//       "subject": "Science Exploration",
+//       "description": "Investigating scientific concepts and conducting experiments"
+//     },
+//     {
+//       "id": 4,
+//       "class": "Kindergarten ",
+//       "age": "5-6 years",
+//       "image":"",
+//       "subject": "Creative Arts",
+//       "description": "Exploring different art forms and creative expression"
+//     },
+//     {
+//       "id": 5,
+//       "class": "Kindergarten ",
+//       "age": "5-6 years",
+//       "image":"",
+//       "subject": "Social Studies",
+//       "description": "Learning about communities and world geography"
+//     }
+//   ]
