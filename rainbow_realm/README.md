@@ -9,7 +9,7 @@ Welcome to WonderKidEdu its was user-friendly school website.
 Build your children knowledge with our school website.
 Plan your children future with our user-friendly school website.
 This is a individual Project from Masai School in the Construct Week within 5 Days.
-Deployed URL 👉 [https://travtok.netlify.app/]
+Deployed URL 👉 [https://incandescent-douhua-33325d.netlify.app/]
 
 Member
 
@@ -107,7 +107,7 @@ SingleProductPage:
 
 
 
-Source Code(GitHub link):- https://github.com/abhipathak1/sharp-lumber-1926
+Source Code(GitHub link):- https://github.com/kblessmi2001/venomous-sense-8377
 
 Show your support
 Give a ⭐ if you like this project!
