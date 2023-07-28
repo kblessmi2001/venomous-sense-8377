@@ -7,7 +7,7 @@ export default function BookDetailsPage() {
     const {id} = useParams()
     const fetchdata = async()=>{
       try {
-        const res = await fetch(`http://localhost:8080/courses/${id}`)
+        const res = await fetch(`https://wild-gray-seal-wig.cyclic.app/courses/${id}`)
         const data = await res.json()
         Setdata(data)
         console.log(data)

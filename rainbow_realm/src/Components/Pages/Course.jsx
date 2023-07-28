@@ -12,7 +12,7 @@ function Course() {
   const [query, setQuery] = useState('');
 
   const fetchProgramsBySearch = (searchQuery) => {
-    return `http://localhost:8080/courses?q=${searchQuery}`;
+    return `https://wild-gray-seal-wig.cyclic.app/courses?q=${searchQuery}`;
   };
 
   useEffect(() => {
@@ -20,10 +20,10 @@ function Course() {
   }, [level]);
 
   const fetchPrograms = async () => {
-    let url = 'http://localhost:8080/courses';
+    let url = 'https://wild-gray-seal-wig.cyclic.app/courses';
 
     if (level !== '') {
-      url = `http://localhost:8080/courses?stage=${level}`;
+      url = `https://wild-gray-seal-wig.cyclic.app/courses?stage=${level}`;
     }
 
     if (query !== '') {
