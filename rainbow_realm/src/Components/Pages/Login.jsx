@@ -19,16 +19,16 @@ function Login({ onClose }) {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    fetch(`http://localhost:8080/user`)
+    fetch(`https://wild-gray-seal-wig.cyclic.app/user`)
       .then((response) => response.json())
       .then((data) => {
         const user = data.find((user) => user.email === email && user.password === password);
         if (user) {
           login(user);
-          alert('Login successful!'); // You can use toast instead of alert if you prefer.
+          alert('Login successful!'); 
           onClose();
         } else {
-          alert('Invalid email or password. Please try again.'); // You can use toast instead of alert if you prefer.
+          alert('Invalid email or password. Please try again.'); 
         }
       })
       .catch((error) => {
@@ -39,7 +39,7 @@ function Login({ onClose }) {
   const handleRegister = (e) => {
     e.preventDefault();
   
-    fetch(`http://localhost:8080/user`)
+    fetch(`https://wild-gray-seal-wig.cyclic.app/user`)
       .then((response) => response.json())
       .then((data) => {
         const userExist = data.some((user) => user.email === email);
@@ -50,7 +50,7 @@ function Login({ onClose }) {
             isClosable: true,
           });
         } else {
-          fetch(`http://localhost:8080/user`, {
+          fetch(`https://wild-gray-seal-wig.cyclic.app/user`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
