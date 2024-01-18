@@ -18,7 +18,7 @@ function AllRoutes() {
           <Route path="/curriculam" element={<Curriculam />} />
           <Route path="/course" element={<Course />} />
           <Route path="/admission" element={<Admission />} />
-          <Route path="/singlesubjectpage/:id" element={<SingleSubjectPage/>}/>
+          <Route path="/singlepage/:id" element={<SingleSubjectPage/>}/>
 
         </Routes>
         </AuthContextProvider>

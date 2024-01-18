@@ -19,7 +19,7 @@ function Login({ onClose }) {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    fetch(`https://wild-gray-seal-wig.cyclic.app/user`)
+    fetch(`https://wonderkidedu.vercel.app/user`)
       .then((response) => response.json())
       .then((data) => {
         const user = data.find((user) => user.email === email && user.password === password);
@@ -39,7 +39,7 @@ function Login({ onClose }) {
   const handleRegister = (e) => {
     e.preventDefault();
   
-    fetch(`https://wild-gray-seal-wig.cyclic.app/user`)
+    fetch(`https://wonderkidedu.vercel.app/user`)
       .then((response) => response.json())
       .then((data) => {
         const userExist = data.some((user) => user.email === email);
@@ -50,7 +50,7 @@ function Login({ onClose }) {
             isClosable: true,
           });
         } else {
-          fetch(`https://wild-gray-seal-wig.cyclic.app/user`, {
+          fetch(`https://wonderkidedu.vercel.app/user`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -105,6 +105,7 @@ function Login({ onClose }) {
             onClick={() => handleTabChange('login')}
             style={{
               marginRight: '20px',
+              marginLeft:"30px",
               backgroundColor: activeTab === 'login' ? '#ffdea8' : 'transparent',
               color: activeTab === 'login' ? 'black' : 'black',
               fontWeight: activeTab === 'login' ? 'bold' : 'bolder',
@@ -126,7 +127,7 @@ function Login({ onClose }) {
         </TabList>
 
         <TabPanels>
-          <TabPanel>
+          <TabPanel style={{marginLeft:"20px",marginRight:"20px"}}>
             <Flex flexDirection="column">
               <br />
               <Input mb={4} type="email" placeholder="Email address" onChange={(e) => setEmail(e.target.value)} />
@@ -146,7 +147,7 @@ function Login({ onClose }) {
               </Text>
             </Flex>
           </TabPanel>
-          <TabPanel>
+          <TabPanel  style={{marginLeft:"20px",marginRight:"20px"}}>
             <Flex flexDirection="column">
               <br />
               <Input mb={4} type="text" placeholder="Enter Username" />

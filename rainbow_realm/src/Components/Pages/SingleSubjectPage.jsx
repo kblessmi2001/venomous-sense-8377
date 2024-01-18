@@ -7,7 +7,7 @@ export default function BookDetailsPage() {
     const {id} = useParams()
     const fetchdata = async()=>{
       try {
-        const res = await fetch(`https://wild-gray-seal-wig.cyclic.app/courses/${id}`)
+        const res = await fetch(`https://wonderkidedu.vercel.app/courses/${id}`)
         const data = await res.json()
         Setdata(data)
         console.log(data)
@@ -23,7 +23,7 @@ useEffect(()=>{
     return (
         <div style={{ fontFamilyfamily: "Arial, Helvetica, sans-serif" }}>
             <div className="subjectContainer" style={{marginTop:"80px"}} >
-              <img src={data.image} alt="" style={{width:"400px" ,margin:"auto",marginBottom:"20px",border:"14px solid #2f4958 ",padding:"8px"}}/>
+              <img src={data.image} alt="" style={{width:"400px",height:"300px" ,margin:"auto",marginBottom:"20px",border:"14px solid #2f4958 ",padding:"8px"}}/>
                 <Heading className="title" mb="4"> {data.stage}</Heading>
                 <Text fontSize="2xl" mb="7" className="section"><b>{data.subject} </b></Text>
                 <Text fontSize="xl" mb="4">What are the stages of {data.subject} development?</Text>
